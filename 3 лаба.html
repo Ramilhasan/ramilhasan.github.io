@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+var Today = new Date();
+var DayOfTheWeek = Today.getDay();
+var DayOfTheWeeks = ['воскресенье', 'понедельник', 'вторник',
+'среда', 'четерг', 'пятница', 'суббота'];
+
+
+var d=new Date();
+var day=d.getDate();
+var month=d.getMonth() + 1;
+var year=d.getFullYear();
+document.write('<H1>Дата - ', day + "." + month + "." + year);
+
+
+
+
+
+document.write('<H1>Сегодня – ', DayOfTheWeeks[DayOfTheWeek],
+'</H1>');
+</script>
+</body>
+</html>
+
+
+<body>
+<script>
+document.write('<H1>Выберите цвет фона страницы</H1>');
+</script>
+<input type="radio" name="R"
+onclick="document.bgColor='white'">Белый<br/>
+<input type="radio" name="R"
+onclick="document.bgColor='lightblue'">Светло-синий<br/>
+<input type="radio" name="R"
+onclick="document.bgColor='lightyellow'">Светло-желтый<br/>
+
+
+<body>
+<img src=" https://habrastorage.org/files/e52/8f0/8cd/e528f08cd83a4585a6f092776f535678.jpg"
+ title="Всплывающая подсказка github"><br/>
+<img src="https://i.ytimg.com/vi/jpxJG6oz3LE/maxresdefault.jpg"
+
+onmouseover="document.getElementById('result').innerHTML =
+'Всплывающая подсказка baku';"
+onmouseout="document.getElementById('result').innerHTML =
+'';"><br/>
+<div id="result"></div>
+</body>
+<body>
+<script>
+function func() {
+var a = Number(document.getElementById('a').value, 10);
+var b = Number(document.getElementById('b').value, 10);
+if (!isNaN(a) && !isNaN(b)) {
+var c = a + b;
+alert(c);
+} else {
+alert("Введите числа!");
+}
+}
+</script>
+<input id="a" type="text"><br>
+<input id="b" type="text"><br>
+<input type="button" value="сумма"
+onclick="func();"><br>
+</body>
